@@ -1,10 +1,8 @@
 # ex3_dsp
 
-This is a implementation of algorithms which solve Densest Subgraph Problem(DSP). I implemented 
+This is a implementation of algorithms which solve Densest Subgraph Problem(DSP). I implemented max-flow based algorithm presented by [Goldberg (1984)](https://www2.eecs.berkeley.edu/Pubs/TechRpts/1984/CSD-84-171.pdf), greedy peeling algorithm presented by [Charikar (2000)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.121.1184&rep=rep1&type=pdf) and GREEDY++ presented by [Boob et al (2020)](https://arxiv.org/pdf/1910.07087.pdf).
 
-CLUCB was proposed by Chen et al (2014), and Exact-ExpGap was proposed by Chen, Gupta and Li (2016).
-
-I experiment with graphical matroid, so these algorithms return the maximum spanning tree of Graph $G$. I tried the following two cases.
+Through some experiments, I tried to grasp the essence of GREEDY++. I found that the load of nodes which consists of the densest subgraph become heavier after enough iterations, and remained until other nodes are removed. I think all graphs will show same tendency, and this makes GREEDY++ work well. 
 
 ## data
 
