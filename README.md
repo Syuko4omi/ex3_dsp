@@ -1,15 +1,24 @@
 # ex3_dsp
 
-All datasets are from http://datasets.syr.edu/pages/datasets.html and http://snap.stanford.edu/data/index.html.
+This is a implementation of algorithms which solve Densest Subgraph Problem(DSP). I implemented 
 
+CLUCB was proposed by Chen et al (2014), and Exact-ExpGap was proposed by Chen, Gupta and Li (2016).
 
-## convert_graph.py
+I experiment with graphical matroid, so these algorithms return the maximum spanning tree of Graph $G$. I tried the following two cases.
+
+## data
+
+All datasets are from http://datasets.syr.edu/pages/datasets.html and http://snap.stanford.edu/data/index.html. 
+
+## src
+
+1. convert_graph.py
 
 Input should be .txt or .csv file. In these files, each row has the number of two nodes which are connected, and they should be separeted by space or tab. 
 
 Output will be a binary file which represents the list representation of a graph.
 
-## exact_dinic.py
+2. exact_dinic.py
 
 Solve DSP with max-flow based algorithm.
 
@@ -27,4 +36,4 @@ Calculate jaccard similarity coefficient(simirality of two sets).
 
 ## for_test.py
 
-Wrapper
+Wrapper function.
