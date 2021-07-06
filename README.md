@@ -1,5 +1,8 @@
 # ex3_dsp
 
+All datasets are from http://datasets.syr.edu/pages/datasets.html and http://snap.stanford.edu/data/index.html.
+
+
 ## convert_graph.py
 
 Input should be .txt or .csv file. In these files, each row has the number of two nodes which are connected, and they should be separeted by space or tab. 
